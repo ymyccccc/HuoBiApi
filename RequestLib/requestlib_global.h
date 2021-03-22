@@ -1,0 +1,12 @@
+﻿#ifndef REQUESTLIB_GLOBAL_H
+#define REQUESTLIB_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(REQUESTLIB_LIBRARY)
+#  define REQUESTLIBSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define REQUESTLIBSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // REQUESTLIB_GLOBAL_H
